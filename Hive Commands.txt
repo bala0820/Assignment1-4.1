@@ -1,0 +1,10 @@
+Create table temperature_data(date String, zip int, temp int) 
+ROW FORMAT DELIMITED 
+
+FIELDS TERMINATED BY ','
+
+STORED AS TEXTFILE;
+
+
+
+LOAD DATA LOCAL INPATH '/home/cloudera/Desktop/Projects/Hive/dataset_Session 14.txt' OVERWRITE INTO TABLE temperature_data;
